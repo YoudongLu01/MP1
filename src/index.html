@@ -1,13 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP1</title>
+    <link rel="stylesheet" href="./css/main.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+
+<body>
+    <div class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="bar-title">Youdong MP1:GUNDAM WEB</a>
+            <ul class="nav-menu">
+                <li><a href="#news" class="nav-link active">GUNDAM NEWS</a></li>
+                <li><a href="#anime" class="nav-link">ANIME</a></li>
+                <li><a href="#tcg" class="nav-link">TCG</a></li>
+                <li><a href="#gunpla" class="nav-link">GUNPLA</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Page Content Sections -->
+    <div class="section" id="news">
+        <h1>GUNDAM NEWS</h1>
+        <a href="https://en.gundam.info/about-gundam/series-pages/gundam-w/">
+            <img src="./sources/wing gundam.png" alt="" width="200">
+
+        </a>
+        <video id="video1" width="90%" muted>
+            <source src="./sources/gundam wings 30th.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+        <div id="video_control">
+            <button onclick="playpause()">Play/Pause</button>
+            <button onclick="muteunmute()">Mute/Unmute</button>
+        </div>
+        <p>Mobile Suit Gundam Wing: New Theatrical Releases, Anniversary Projects,
+             Manga and More Announced at San Diego Comic Con 2025.
+             Click Logo for more information!
+        </p>
+
+     
+    </div>
+
+    <div class="section" id="anime">
+        <h1>GUNDAM ANIMATION</h1>
+        <p>
+            Explore Gundam Anime Series
+        </p>
+        <!-- PPT Slides Container -->
+        <div class="slides-container">
+            <div class="slides-wrapper" id="slides-wrapper">
+                <!-- Slide 1 -->
+                <div class="slide slide-1">
+                    <h3>Universal Century</h3>
+                    <a href="https://gundam.fandom.com/wiki/Universal_Century">
+                        <p>
+                            Explore Gundam UC
+                        </p>
+                    </a>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="slide slide-2">
+                    <h3>Future Century</h3>
+                    <a href="https://gundam.fandom.com/wiki/Future_Century">
+                        <p>
+                            Explore Gundam FC
+                        </p>
+                    </a>
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="slide slide-3">
+                    <h3>Cosmic Era</h3>
+                    <a href="https://gundam.fandom.com/wiki/Cosmic_Era">
+                        <p>
+                            Explore Gundam CE
+                        </p>
+                    </a>
+                </div>
+                
+                <!-- Slide 4 -->
+                <div class="slide slide-4">
+                    <h3>Anno Domini</h3>
+                    <a href="https://gundam.fandom.com/wiki/Anno_Domini">
+                        <p>
+                            Explore Gundam AD
+                        </p>
+                    </a>
+                </div>
+                
+                <!-- Slide 5 -->
+                <div class="slide slide-5">
+                    <a href="https://en.gundam.info/about-gundam/series-pages.html">
+                        <p>Explore more Gundam Anime Series</p>
+
+                    </a>
+                    
+                </div>
+            </div>
+            
+            <!-- Navigation Dots -->
+            <div class="slide-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+                <span class="dot" data-slide="3"></span>
+                <span class="dot" data-slide="4"></span>
+            </div>
+            
+            <!-- Navigation Arrows -->
+            <button class="slide-btn prev-btn" id="prev-btn">❮</button>
+            <button class="slide-btn next-btn" id="next-btn">❯</button>
+        </div>
+    </div>
+
+    <div class="section" id="tcg">
+        <div class="tcg">
+            <img src="./sources/gundamtcg.webp" alt="" width="15%">
+            <h1>Gundam Trading Card Game</h1>
+
+        </div>
+
+
+        <div id="tcgbox">
+            <span class="tcgsection">
+                <a href="https://www.gundam-gcg.com/en/welcome/playguide.php">
+                <div class="contentbox">
+                    <img src="./sources/tcg1.jpg" alt="" width="100%" class="tcgimg">
+                    <div><h1>LEARN <br> THE RULES</h1></div>
+                    <div>_____</div>
+                    <div>
+                        <p> <br>
+                            Pair Unit and Pilots,<br>
+                            and achieve <br>
+                            victory over enemy forces <br>
+                            with you unique tactics.
+                        </p>
+                    </div>
+                </div>
+            </a>
+
+                <a href="https://www.gundam-gcg.com/en/teaching-app/">
+                <div class="contentbox">
+                    <img src="./sources/tcg2.webp" alt="" width="100%" class="tcgimg">
+                    <h1>LEARN TO PLAY </h1>
+                    <h1>WITH THE APP</h1>
+                    <p>_____</p>
+                    <p>Experience <br>
+                    the GUNDAM CARD GAME <br> 
+                    on your PC <br>
+                    or smartphone.
+                </p>
+                </div>
+            </a>
+            </span>
+            <span class="tcgsection">
+                <a href="https://www.gundam-gcg.com/en/products/">
+                <div class="contentbox">
+                    <img src="./sources/tcg3.jpg" alt="" width="100%" class="tcgimg">
+                    <h1> GET CARD <br>  </h1>
+
+                    <p>_____</p>
+                    <p>The lastest information <br>
+                    on ready-to-play <br>
+                    starter decks <br>
+                    and booster packs.
+                </p>
+                    
+                </div>
+            </a>
+
+                <a href="https://www.gundam-gcg.com/en/events/">
+                <div class="contentbox">
+                    <img src="./sources/ctg4.jpg" alt="" width="100%" class="tcgimg">
+                    <h1>PARTICIPATE <br> IN EVENTS</h1>
+                    <p>_____</p>
+                    <P>From high-level competitive battles to <br>
+                    events that even beginners can easily join. <br>
+                    Special prizes await those who <br>
+                    participate in tournaments.
+                </P>
+                </div>
+            </a>
+            </span>
+        </div>
+
+    </div>
+
+    <div class="section" id="gunpla">
+        <h1>GUNPLA</h1>
+        <p>GUNPLA WORLD CHAMPIONSHIP</p>
+        <div class="chamindicator">
+            <div class="images">
+                <img src="./sources/2019wc.jpg" alt="2019">
+                <img src="./sources/2020wc.jpg" alt="2020">
+                <img src="./sources/2021wc.jpg" alt="2021">
+                <img src="./sources/2022wc.jpg" alt="2022">
+            </div>
+
+        </div>
+
+        <div class="modal">
+            <div class="modalContent">
+                <img class="modalImg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+                <span class="modalTxt"></span>
+                <span class="close">X</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="contactbar">
+        <div class="sunriselogo">
+            <a href="">
+                <img src="./sources/sunrise.webp" alt="">
+            </a>
+        </div>
+
+        <div class="socialmedia">
+            <a href="https://x.com/sunriseinc7?lang=en">
+                <i class="fa-brands fa-x-twitter fa-xl"></i>
+
+            </a>
+            <p>Explore More SunRise Anime</p>
+            <a href="https://www.facebook.com/SunriseIntl/">
+                <i class="fa-brands fa-facebook fa-xl"></i>
+            </a>
+            <p>Explore More SunRise Anime</p>
+
+        </div>
+
+        <div class="contacinfor">
+            <a href="https://github.com/YoudongLu01">
+                <i class="fa-brands fa-github fa-xl"></i>
+            </a>
+            <p>Feel Free to visit me!</p>
+
+        </div>
+
+
+
+        <div class="contacinfor">
+        </div>
+
+
+        
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
 </html>
